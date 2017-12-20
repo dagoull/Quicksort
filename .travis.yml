@@ -1,1 +1,19 @@
-
+language: java
+sudo: false
+dist: trusty
+install: true
+addons:
+  sonarqube:
+    organization: "dcastell"
+    token:
+      secure: "760ffa5044f9ea9dfeec724b948246b6216482ce"
+jdk:
+  - oraclejdk8
+script:
+  - mvn clean test org.jacoco:jacoco-maven-plugin:prepare-agent package javadoc:javadoc sonar:sonar
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+notifications:
+  email: false
