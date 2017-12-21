@@ -20,6 +20,6 @@ cache:
 notifications:
   email: 
   recipients:
-- dcastell@ull.es
+    - dcastell@ull.es
 on_success: always
 on_failure: always
