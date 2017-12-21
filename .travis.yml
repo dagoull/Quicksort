@@ -19,4 +19,7 @@ cache:
     - '$HOME/.sonar/cache'
 notifications:
   email: 
-  - dcastell@ull.edu.es
+  recipients:
+- dcastell@ull.es
+on_success: always
+on_failure: always
