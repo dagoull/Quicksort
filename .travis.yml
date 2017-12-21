@@ -18,4 +18,4 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.sonar/cache'
 notifications:
-  email: false
+  email: dcastell@ull.edu.es
