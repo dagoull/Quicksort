@@ -7,7 +7,7 @@ public class Quicksort  {
 
 	private int number;
 
-
+	private int numerito; //variable tonta
 
 	public void sort(int[] values) {
 
