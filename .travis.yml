@@ -2,7 +2,6 @@ language: java
 sudo: false
 dist: trusty
 install: true
-- travis encrypt abcdef0123456789
 addons:
   sonarcloud:
     organization: "dcastell"
