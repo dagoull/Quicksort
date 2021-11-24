@@ -1,6 +1,5 @@
 package es.ull.esit.sort.quicksort;
 
-
 public class Quicksort  {
 
 	private int[] numbers;
@@ -47,7 +46,7 @@ public class Quicksort  {
 
 			while (numbers[i] < pivot) {
 
-				i++;
+				i++; // incremento
 
 			}
 
