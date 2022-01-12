@@ -1,18 +1,7 @@
-version: '2.1'
 orbs:
-  java-maven: whoop/java-maven@1.0
-jobs:
-  build:
-    executor:
-      name: java-maven/java11
-    resource_class: xlarge
-    steps:
-      - checkout
-      - java-maven/resolve-dependencies:
-          threads: '10'
-      - java-maven/build-and-test:
-          threads: '10'
-      - java-maven/sonarqube
-      - java-maven/publish:
-          threads: '10'
-workflows: null
+  maven: circleci/maven@x.y
+version: 2.1
+workflows:
+  maven_test:
+    jobs:
+      - maven/test
