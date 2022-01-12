@@ -8,15 +8,11 @@ jobs:
     resource_class: xlarge
     steps:
       - checkout
-      - java-maven/resolve-dependencies
-      - java-maven/build-and-test
+      - java-maven/resolve-dependencies:
+          threads: '10'
+      - java-maven/build-and-test:
+          threads: '10'
       - java-maven/sonarqube
-      - java-maven/publish
-workflows:
-  build_and_test:
-    jobs:
-      - build:
-          context: environment-variables
-      - java-maven/snyk_security_scan:
-          context: environment-variables
-  version: 2
+      - java-maven/publish:
+          threads: '10'
+workflows: null
