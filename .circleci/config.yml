@@ -6,9 +6,10 @@ jobs:
         auth:
           username: mydockerhub-user
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+        parallelism: 4
     steps:
       - checkout
       - run : mvn test package
       - store_artifacts:
           path:  target
-  parallelism: 4
+
