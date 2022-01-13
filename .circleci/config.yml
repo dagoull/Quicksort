@@ -3,7 +3,7 @@ version: 2.1
 # add your orb below, to be used in integration tests (note: a @dev:alpha
 # release must exist.);
 orbs:
-  maven: circleci/maven@dev:alpha
+  maven: circleci/maven@test
   orb-tools: circleci/orb-tools@9.0
 
 executors:
