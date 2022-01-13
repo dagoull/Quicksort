@@ -8,11 +8,10 @@ jobs:
     resource_class: xlarge
     steps:
       - checkout
-      - java-maven/resolve-dependencies:
-          threads: '10'
-      - java-maven/build-and-test:
-          threads: '10'
+      - java-maven/resolve-dependencies
+      - java-maven/build-and-test
       - java-maven/sonarqube
       - java-maven/publish:
-          threads: '10'
+          release: true
 workflows: null
+
