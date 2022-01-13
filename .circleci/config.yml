@@ -1,16 +1,3 @@
 version: '2.1'
-orbs:
-  java-maven: whoop/java-maven@1.0
-jobs:
-  build:
-    executor:
-      name: java-maven/java11
-    resource_class: xlarge
-    steps:
-      - checkout
-      - java-maven/resolve-dependencies
-      - java-maven/build-and-test
-      - java-maven/sonarqube
-      - java-maven/publish:
-          release: true
-workflows: null
+orbs: 
+  java: mediarails/java@0.1.17
