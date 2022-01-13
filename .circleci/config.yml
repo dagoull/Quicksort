@@ -5,3 +5,5 @@ workflows:
   maven_test:
     jobs:
       - maven/test
+      - store_artifacts:
+          path:  target
