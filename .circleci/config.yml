@@ -14,4 +14,3 @@ jobs:
       - java-maven/publish:
           release: true
 workflows: null
-
