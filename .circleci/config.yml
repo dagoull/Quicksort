@@ -8,6 +8,6 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run : mvn test
+      - run : mvn test package
       - store_artifacts:
           path:  target
