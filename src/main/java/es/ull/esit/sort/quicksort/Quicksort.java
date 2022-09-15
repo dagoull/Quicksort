@@ -46,6 +46,8 @@ public class Quicksort  {
 			while (numbers[j] > pivot) {
 
 				j--;
+				
+				//decremento
 
 			}
 
