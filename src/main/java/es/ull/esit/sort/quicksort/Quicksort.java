@@ -17,7 +17,10 @@ public class Quicksort  {
 
 	private void quicksort(int low, int high) {
 
-		int i = low, j = high;
+		int i;
+		int j;
+		i = low;
+		j = high;
 
 		// Get the pivot element from the middle of the list
 
