@@ -15,7 +15,7 @@ public class QuicksortTest {
 
     private int[] numbers;
     private final static int SIZE = 7;
-    private final static int MAX = 20;
+    private final static int MAX =  20;
 
     @Before
     public void setUp() throws Exception {
